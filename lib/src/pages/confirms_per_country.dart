@@ -17,7 +17,7 @@ class ConfirmsPerCountry extends StatelessWidget {
           iconColor: Theme.of(context).primaryColor,
           child: ListTile(
             title: Text(country.country),
-            subtitle: Text('Casos confirmados: ${country.newConfirmed}'),
+            subtitle: Text('Casos confirmados: ${country.totalConfirmed}'),
             trailing: Icon(Icons.arrow_forward_ios),
             onTap: () {
               showDialog(

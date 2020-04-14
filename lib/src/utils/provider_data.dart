@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
 class CovidData extends ChangeNotifier {
-  final List<Country> countriesStatus = [];
+  List<Country> countriesStatus = [];
   num newConfirmed;
   num totalConfirmed;
   num newDeaths;
@@ -26,6 +26,13 @@ class CovidData extends ChangeNotifier {
     this.totalDeaths = covidResponse.global.totalDeaths;
     this.newRecovered = covidResponse.global.newRecovered;
     this.totalRecovered = covidResponse.global.totalRecovered;
+    sortByConfirmedCases();
     notifyListeners();
+  }
+
+  void sortByConfirmedCases() {
+    countriesStatus
+        .sort((a, b) => a.totalConfirmed.compareTo(b.totalConfirmed));
+    countriesStatus=countriesStatus.reversed.toList();
   }
 }
