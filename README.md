@@ -1,16 +1,23 @@
-# covidtracker_flutter
+# Covid19 Tracker
 
-A new Flutter project.
+Esta app esta hecha en flutter consumiendo el siguiente [backend](https://api.covid19api.com)
 
-## Getting Started
+# Para ejecutar la app has lo siguiente:
+    - Clona repositorio
+    - En tu terminal de preferencia inserta el siguiente comando: flutter packages get o abrelo en VsCode o Android Studio
+    - Ejecutalo en un dispositivo de tu preferencia
+    - Disfrutalo
 
-This project is a starting point for a Flutter application.
+    * Si deseas ejecutarlo asegurate de estar en algun branch de flutter excepto stable
 
-A few resources to get you started if this is your first Flutter project:
+# Screenshots:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+<img src="images/image0.jpg" height=500px>
+<img src="images/image1.jpg" height=500px>
+<div height=200px/>
+<img src="images/image2.png" height=500px>
+<img src="images/image3.png" height=500px>
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+
+
