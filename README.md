@@ -1,6 +1,6 @@
 # Covid19 Tracker
 
-Para abrir demo web abre este enlace: https://nestorsgarzonc.github.io/covidstatusWeb/#HomePage
+Para abrir demo web abre este enlace: https://nestorsgarzonc.github.io/covidstatusWeb
 
 Esta app esta hecha en flutter consumiendo el siguiente
 [backend](https://api.covid19api.com)
