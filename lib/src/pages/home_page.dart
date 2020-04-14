@@ -1,5 +1,6 @@
 import 'package:covidtracker_flutter/src/pages/global_statistics.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'confirms_per_country.dart';
 
 class HomePage extends StatelessWidget {
@@ -14,11 +15,11 @@ class HomePage extends StatelessWidget {
           bottom: TabBar(
             tabs: <Widget>[
               Tab(
-                icon: Icon(Icons.location_on),
+                icon: FaIcon(FontAwesomeIcons.solidMap),
                 text: 'Casos por pais',
               ),
               Tab(
-                icon: Icon(Icons.supervised_user_circle),
+                icon: FaIcon(FontAwesomeIcons.globeAmericas),
                 text: 'Global',
               ),
             ],

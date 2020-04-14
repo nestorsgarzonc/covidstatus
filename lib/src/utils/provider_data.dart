@@ -28,5 +28,4 @@ class CovidData extends ChangeNotifier {
     this.totalRecovered = covidResponse.global.totalRecovered;
     notifyListeners();
   }
-
 }
