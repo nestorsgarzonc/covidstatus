@@ -11,29 +11,29 @@ class HomePage extends StatelessWidget {
       length: 2,
       child: Scaffold(
         appBar: AppBar(
-          title: Text('Covid19-tracker'),
+          centerTitle: true,
+          title: Text('COVID-19 TRACKER', style: TextStyle(letterSpacing: 2)),
           bottom: TabBar(
             tabs: <Widget>[
-              Tab(
-                icon: FaIcon(FontAwesomeIcons.solidMap),
-                text: 'Casos por pais',
-              ),
-              Tab(
-                icon: FaIcon(FontAwesomeIcons.globeAmericas),
-                text: 'Global',
-              ),
+              buildTab(FontAwesomeIcons.solidMap, 'Casos por pais'),
+              buildTab(FontAwesomeIcons.globeAmericas, 'Global'),
             ],
           ),
-          centerTitle: true,
         ),
         body: TabBarView(
           children: <Widget>[
-            //TODO: sort by number of confirmated cases
             ConfirmsPerCountry(),
             StatisticsCountry(),
           ],
         ),
       ),
+    );
+  }
+
+  Tab buildTab(IconData icon, String text) {
+    return Tab(
+      icon: FaIcon(icon),
+      text: text,
     );
   }
 }

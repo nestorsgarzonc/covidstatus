@@ -16,14 +16,20 @@ class ConfirmsPerCountry extends StatelessWidget {
           dense: false,
           iconColor: Theme.of(context).primaryColor,
           child: ListTile(
-            title: Text(country.country),
+            title: Text(
+              country.country,
+              style: TextStyle(fontWeight: FontWeight.w600),
+            ),
             subtitle: Text('Casos confirmados: ${country.totalConfirmed}'),
             trailing: Icon(Icons.arrow_forward_ios),
             onTap: () {
               showDialog(
                 context: context,
                 builder: (_) => AlertDialog(
-                  title: Text('Informacion adicional'),
+                  title: Text(
+                    'Informacion adicional',
+                    style: TextStyle(fontWeight: FontWeight.w800),
+                  ),
                   content: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
@@ -39,7 +45,7 @@ class ConfirmsPerCountry extends StatelessWidget {
                         'Ultima actualizacion: ${country.date.year}/${country.date.month}/${country.date.day} ${country.date.hour}:00',
                       ),
                     ],
-                  ), //TODO: dialog info
+                  ),
                   elevation: 2,
                   scrollable: true,
                   shape: RoundedRectangleBorder(
